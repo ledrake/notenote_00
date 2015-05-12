@@ -11,8 +11,13 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'devise', '~> 3.4.1'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  # gem 'spring'
+  gem 'pry-rails', '~> 0.3.3'
+  gem 'haml-rails', '~> 0.8'
+  gem 'simple_form', '~> 3.1.0.rc2'
 end
