@@ -1,12 +1,7 @@
-%p#notice= notice
+%h1.title= @note.title
+%p= simple_format(@note.content)
 
-%p
-  %b Title:
-  = @note.title
-%p
-  %b Content:
-  = @note.content
+= link_to "All Notes", notes_path
 
-= link_to 'Edit', edit_note_path(@note)
-\|
-= link_to 'Back', notes_path
+= link_to "Edit", edit_note_path(@note)
+= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }
